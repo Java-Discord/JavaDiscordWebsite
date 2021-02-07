@@ -1,0 +1,260 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap');
+@font-face {
+    src: url(../fonts/Uni\ Sans\ Heavy.otf);
+    font-family: Uni Sans;
+}
+@font-face {
+    src: url(../fonts/Uni\ Sans\ Thin\ Italic.otf);
+    font-family: "Uni Sans Italic";
+}
+@import url("animations.css");
+
+/* Style */
+
+/* ---------------------------------------------------------- */
+/* ------------------------- Global ------------------------- */
+/* ---------------------------------------------------------- */
+
+/* ------------------------ Navbar -------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #011E2F;
+}
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #011E2F;
+}
+
+nav {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-ul li a:focus {
+    outline: none;
+}
+
+nav img {
+    width: 50px;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-ul li a {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-ul li a:hover {
+    color: rgb(219, 219, 219);
+}
+
+.join-btn {
+    color: white;
+    text-decoration: none;
+    background-color: #FF212D;
+    padding: 12px 40px;
+    border-radius: 36px;
+    font-size: 30px;
+    font-family: "Uni Sans", sans-serif;
+}
+
+.join-btn:hover {
+    background: #fa454e;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.active-link {
+    font-weight: 900;
+}
+
+.active-link hr {  
+    color: white;
+    border: 1.5px solid white;
+    background-color: white;
+}
+
+.navbar-scrolling {
+    box-shadow: 0px 7px 17px 5px rgba(2,50,74,1);
+}
+
+.hamburger {
+    background: transparent;
+    color: white;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+/* ------------------------ Footer -------------------------- */
+
+.copyright {
+    padding: 16px 0px;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* ---------------------------------------------------------- */
+/* ------------------------- Pages -------------------------- */
+/* ---------------------------------------------------------- */
+
+
+/* ------------------------- Home --------------------------- */
+
+header {
+    margin-top: 240px;
+    padding-bottom: 150px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.left-box h1 {
+    font-size: 144px;
+    font-family: "Uni Sans", sans-serif;
+    color: white;
+}
+
+.right-box {
+    padding-left: 50px;
+}
+
+.right-box p {
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    background-color: #FF212D;
+    padding: 20px 35px;
+    font-size: 26px;
+    font-family: "Uni Sans", sans-serif;
+    border: none;
+    border-radius: 35px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.button a:hover {
+    background-color: #fa454e;
+}
+
+/* ------------------------ Rules -------------------------- */
+
+.header-rules {
+    margin-top: 120px;
+}
+
+.container-rules {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: "Uni Sans", sans-serif;
+    font-size: 100px;
+}
+
+.title-box p {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Uni Sans Italic", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.rules-box {
+    padding: 30px;
+    margin-top: 16px;
+    background-color: #062233;
+    border-radius: 25px;
+}
+
+.rule {
+    padding: 40px;
+    color: white;
+    font-weight: 700;
+}
+
+.rule h3{
+    font-size: 35px;
+}
+
+.rule p{
+    font-size: 22px;
+}
+
+#special-word {
+    background-color: #1E3847;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+#tos-link {
+    text-decoration: underline;
+    color: white;
+}

@@ -1,0 +1,328 @@
+/* Homepage */
+
+@media only screen and (max-width: 1650px){
+    header {
+        margin-top: 245px;
+    }
+    
+    .container {
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .left-box h1 {
+        font-size: 160px;
+        font-family: "Uni Sans", sans-serif;
+        color: white;
+    }
+    
+    .right-box p {
+        font-size: 45px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .button a {
+        color: white;
+        text-decoration: none;
+        background-color: #FF212D;
+        padding: 20px 35px;
+        font-size: 26px;
+        font-family: "Uni Sans", sans-serif;
+        border: none;
+        border-radius: 35px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
+    .button a:hover {
+        background-color: #fa454e;
+    }
+}
+
+@media only screen and (max-width: 1345px){
+    header {
+        margin-top: 280px;
+        padding: 0px 40px 140px 40px;
+    }
+    
+    .container {
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .left-box h1 {
+        font-size: 150px;
+        font-family: "Uni Sans", sans-serif;
+        color: white;
+    }
+    
+    .right-box p {
+        font-size: 42.5px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .button a {
+        color: white;
+        text-decoration: none;
+        background-color: #FF212D;
+        padding: 20px 35px;
+        font-size: 26px;
+        font-family: "Uni Sans", sans-serif;
+        border: none;
+        border-radius: 35px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
+    .button a:hover {
+        background-color: #fa454e;
+    }
+}
+
+@media only screen and (max-width: 1240px){
+    header {
+        margin-top: 350px;
+    }
+    
+    .container {
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .left-box h1 {
+        font-size: 120px;
+        font-family: "Uni Sans", sans-serif;
+        color: white;
+    }
+    
+    .right-box p {
+        font-size: 40px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .button a {
+        color: white;
+        text-decoration: none;
+        background-color: #FF212D;
+        padding: 20px 35px;
+        font-size: 26px;
+        font-family: "Uni Sans", sans-serif;
+        border: none;
+        border-radius: 35px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
+    .button a:hover {
+        background-color: #fa454e;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    header {
+        margin-top: 350px;
+        padding-bottom: 200px;
+    }
+    
+    .container {
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .left-box h1 {
+        font-size: 110px;
+        font-family: "Uni Sans", sans-serif;
+        color: white;
+    }
+    
+    .right-box p {
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .button a {
+        color: white;
+        text-decoration: none;
+        background-color: #FF212D;
+        padding: 15px 35px;
+        font-size: 26px;
+        font-family: "Uni Sans", sans-serif;
+        border: none;
+        border-radius: 35px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
+    .button a:hover {
+        background-color: #fa454e;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-ul.show {
+        display: flex;
+    }
+
+    nav.bottom-shadow-effect {
+        box-shadow: 0px 7px 17px 5px rgba(2,50,74,1);
+    }
+
+    nav {
+        transition: all .5s ease;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* PAGE */
+
+    header {
+        margin-top: 150px;
+        padding-bottom: 120px;
+    }
+    
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .left-box h1 {
+        font-size: 100px;
+        font-family: "Uni Sans", sans-serif;
+        color: white;
+    }
+
+    .right-box {
+        padding-right: 50px;
+    }
+    
+    .right-box p {
+        margin-top: 52px;
+        font-size: 24px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .button a {
+        color: white;
+        text-decoration: none;
+        background-color: #FF212D;
+        padding: 15px 35px;
+        font-size: 26px;
+        font-family: "Uni Sans", sans-serif;
+        border: none;
+        border-radius: 35px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
+    .button a:hover {
+        background-color: #fa454e;
+    }
+
+    .copyright p{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    header {
+        margin-top: 150px;
+        padding-bottom: 105px;
+    }
+    
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .left-box h1 {
+        font-size: 80px;
+        font-family: "Uni Sans", sans-serif;
+        color: white;
+    }
+
+    .right-box {
+        padding-left: 14px;
+    }
+    
+    .right-box p {
+        margin-top: 40px;
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .button a {
+        color: white;
+        text-decoration: none;
+        background-color: #FF212D;
+        padding: 15px 35px;
+        font-size: 26px;
+        font-family: "Uni Sans", sans-serif;
+        border: none;
+        border-radius: 35px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
+    .button a:hover {
+        background-color: #fa454e;
+    } 
+}
+
+@media only screen and (max-width: 414px) {
+
+    .right-box{
+        padding-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .right-box{
+        padding-left: 16px;
+    }
+}
+
+/* Rules page */
+
+@media only screen and (max-width: 950px) {
+    .title {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .title {
+        font-size: 60px;
+        padding: 0 20px;
+    }
+}
+

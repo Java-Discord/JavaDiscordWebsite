@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Java Discord - Rules</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="Navbar" id="navbar">
+        <nav>
+            <img src="./assets/LogoRedWhite.png" alt="JavaDiscordLogo">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="https://github.com/java-discord" target="_blank">GitHub</a></li>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./rules.html" class="active-link">Rules<hr></a></li>
+            </ul>
+            <a href="https://discord.gg/x65hqE6" class="nav-ul join-btn" id="nav-ul">Join</a>
+        </nav>
+    </div>
+    <!-- Content -->
+    <section class="header-rules">
+        <div class="container-rules">
+            <div class="title-box">
+                <div class="title">Server Rules</div>
+                <p>
+                    like almost every other discord, there are some rules better to be noted to prevent some chaos.
+                </p>
+            </div>
+            <div class="rules-box">
+                <div class="rule-list">
+                    <div class="rule">
+                        <h3 id="rule-num">1.</h3>
+                        <p>
+                            No spamming, trolling, insults, advertising and NSFW content.
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">2.</h3>
+                        <p>
+                            Do not attack or insult persons based on their race, ethnicity, nationality, sex, gender, sexual orientation, religion or disabilities. Violators will be banned from the server and might be reported to Discord.
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">3.</h3>
+                        <p>
+                            Listen to instructions given by our team.
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">4.</h3>
+                        <p>
+                            Alt accounts are not allowed. Accounts involved will be banned without warning.
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">5.</h3>
+                        <p>
+                            If we can't easily mention your username please change it. For example <b id="special-word">”௵”</b> should be changed.
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">6.</h3>
+                        <p>
+                            Do not ask for help with projects that break rules and/or <a href="https://discord.com/terms" id="tos-link" target="_blank">Discord’s ToS</a>. This also includes projects that break laws. Do not request help with ongoing exams and don’t provide or request direct solutions to graded assignments. General guidance is fine.
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">7.</h3>
+                        <p>
+                            Keep everything in English to the best of your ability. This helps us keep the server moderated and accessible for everyone.
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">8.</h3>
+                        <p>
+                            If you need help, use one of our help channels (please check <b id="special-word">#❗︱help-guidelines</b> first).
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">9.</h3>
+                        <p>
+                            Before asking questions, check out  <b id="special-word">#❗︱help-guidelines</b>  and only DM people for help that have the @DMs Welcome! role. Not following the guidelines in this channel can be treated as any other rule-break.
+
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">10.</h3>
+                        <p>
+                            Do not expect us to do your homework.
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">11.</h3>
+                        <p>
+                            Please keep political discussions or other political content out of this server.
+                        </p>
+                    </div>
+                    <div class="rule">
+                        <h3 id="rule-num">12.</h3>
+                        <p>
+                            Follow Discord’s Community Guidelines and Terms of Service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <p>&copy 2021 JavaDiscord | JavaDiscord is not affiliated, associated, or endorsed with/by Discord or Oracle</p>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript">
+        // Hamburger menu
+        const hamburger = document.getElementById("hamburger");
+        const navUL = document.getElementById("nav-ul");
+        const navbar = document.querySelector("nav");
+
+        hamburger.addEventListener("click", () => {
+            navUL.classList.toggle("show");
+            navbar.classList.toggle("bottom-shadow-effect");
+        });
+
+        // Scroll effect
+        window.addEventListener("scroll", function() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("navbar-scrolling", window.scrollY > 0);
+        });
+
+    </script>
+</body>
+</html>
