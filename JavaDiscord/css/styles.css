@@ -183,6 +183,10 @@ nav img {
     font-size: 18px;
 }
 
+#got-it-btn:hover {
+    background: #fa454e;
+}
+
 #cookie-policy {
     font-family: "Uni Sans", sans-serif;
     color: white;
