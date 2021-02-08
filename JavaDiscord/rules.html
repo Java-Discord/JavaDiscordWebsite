@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3DK8F7FPD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-T3DK8F7FPD');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -138,6 +146,20 @@
             navbar.classList.toggle("navbar-scrolling", window.scrollY > 0);
         });
 
+        // Cookie
+        const cookieContainer = document.querySelector(".cookie-container");
+        const cookieButton = document.querySelector(".cookie-btn");
+
+        cookieButton.addEventListener("click", () => {
+            cookieContainer.classList.remove("active");
+            localStorage.setItem("cookieContainerDisplayed", "true");
+        });
+
+        setTimeout(() => {
+            if (!localStorage.getItem("cookieContainerDisplayed")) {
+                cookieContainer.classList.add("active")
+            }
+        }, 1000);
     </script>
 </body>
 </html>
