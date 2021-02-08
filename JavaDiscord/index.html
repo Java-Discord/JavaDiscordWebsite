@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3DK8F7FPD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-T3DK8F7FPD');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="With over 2,000 Members and 20,000 Messages sent each month, join one of the biggest Java Communities to help, get help and discuss programming in Java."/>
@@ -52,6 +60,19 @@
             <p>&copy 2021 JavaDiscord | JavaDiscord is not affiliated, associated, or endorsed with/by Discord or Oracle</p>
         </div>
     </footer>
+    <!-- Cookie-Banner -->
+    <div class="cookie-container">
+        <div class="cookie-content">
+            <h2 id="cookie-policy">Cookie policy</h2>
+            <p>
+                We are using cookies to analyse traffic on this website.
+                You accept the use of cookies by closing or dismissing this message, scrolling the page, clicking a link/button or by continuing to browse in any way.
+            </p>
+        </div>
+        <div class="cookie-links">
+            <a href="#" id="got-it-btn" class="cookie-btn">Got it!</a>
+        </div>
+    </div>
     <!-- JS -->
     <script type="text/javascript">
         // Hamburger menu
@@ -69,6 +90,21 @@
             var navbar = document.getElementById("navbar");
             navbar.classList.toggle("navbar-scrolling", window.scrollY > 0);
         });
+        
+        // Cookie
+        const cookieContainer = document.querySelector(".cookie-container");
+        const cookieButton = document.querySelector(".cookie-btn");
+
+        cookieButton.addEventListener("click", () => {
+            cookieContainer.classList.remove("active");
+            localStorage.setItem("cookieContainerDisplayed", "true");
+        });
+
+        setTimeout(() => {
+            if (!localStorage.getItem("cookieContainerDisplayed")) {
+                cookieContainer.classList.add("active")
+            }
+        }, 1000);
     </script>
 </body>
 </html>
