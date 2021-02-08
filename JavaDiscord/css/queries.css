@@ -326,3 +326,27 @@
     }
 }
 
+/* Cookie-Banner */
+
+@media only screen and (max-width: 535px) {
+    .cookie-container.active {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 0px;
+    } 
+
+    .cookie-content {
+        padding-right: 50px;
+    }
+
+    .cookie-links {
+        padding: 20px 50px 20px 0px;
+    }
+
+    #got-it-btn {
+        font-size: 24px;
+    }
+}
