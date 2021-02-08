@@ -141,6 +141,54 @@ nav img {
     color: white;
 }
 
+/* ------------------------ Cookies ------------------------- */
+
+.cookie-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 45px;
+    bottom: -100%;
+    width: 400px;
+    background-color: rgb(30, 56, 71);
+    padding: 20px;
+    border-radius: 16px;
+    transition: 400ms;
+}
+
+.cookie-container.active {
+    bottom: 45px;
+}
+
+.cookie-content p{
+    color: rgb(207, 207, 207);
+    font-size: 18px;
+}
+
+.cookie-links{
+    text-align: right;
+}
+
+.cookie-links a {
+    text-decoration: underline;
+    color: white;
+    margin-left: 10px;
+}
+
+#got-it-btn {
+    text-decoration: none;
+    font-family: "Uni Sans", sans-serif;
+    padding: 10px 16px;
+    background-color: #FF212D;
+    font-size: 18px;
+}
+
+#cookie-policy {
+    font-family: "Uni Sans", sans-serif;
+    color: white;
+    padding-bottom: 10px;
+}
+
 
 /* ---------------------------------------------------------- */
 /* ------------------------- Pages -------------------------- */
