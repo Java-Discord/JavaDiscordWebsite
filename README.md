@@ -6,3 +6,5 @@ Code of the official [Java Discord](https://javadiscord.net) Website. Made by [@
 
 - Include QOTW Leaderboard
 - Webinterface to change Rules without editing HTML
+
+- Figma Prototype (kinda outdated): https://bit.ly/3ndhyJP
