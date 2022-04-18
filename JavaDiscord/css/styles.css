@@ -43,7 +43,7 @@ nav {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 5px;
     flex-wrap: wrap;
 }
 
@@ -52,7 +52,7 @@ nav {
 }
 
 nav img {
-    width: 50px;
+    width: 100px;
 }
 
 .nav-ul {
@@ -253,7 +253,7 @@ header {
 }
 
 .container-rules {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -287,17 +287,17 @@ header {
 }
 
 .rule {
-    padding: 40px;
+    padding: 25px;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .rule h3{
-    font-size: 35px;
+    font-size: 28px;
 }
 
 .rule p{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #special-word {
