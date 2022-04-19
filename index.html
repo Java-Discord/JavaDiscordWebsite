@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3DK8F7FPD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-T3DK8F7FPD');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="With over 12000 Members and 50,000 Messages sent each month, join one of the biggest Java Communities to help, get help and discuss programming in Java."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/queries.css">
+    <link rel="shortcut icon" href="./assets/LogoBlue_NoBG.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Java Discord - Java Community on Discord</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="Navbar" id="navbar">
+        <nav>
+            <img src="./assets/LogoBlue_NoBG.png" alt="JavaCommunityLogo">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="https://github.com/java-discord" target="_blank">GitHub</a></li>
+                <li><a href="#" class="active-link">Home<hr></a></li>
+                <li><a href="./rules.html">Rules</a></li>
+            </ul>
+            <a href="https://discord.gg/X3NmMgzFKF" class="nav-ul join-btn" id="nav-ul">Join</a>
+        </nav>
+    </div>
+    <!-- Content -->
+    <header>
+        <div class="container">
+            <div class="left-box">
+                <h1>HELP.<br>CODE.<br>LEARN.</h1>
+            </div>
+            <div style="flex: 2;"></div>
+            <div class="right-box">
+                <p>
+                    Get help, share ideas and chat with thousands of Java developers from across the globe. <br>
+                    Welcome to the Java Community, one of the biggest
+                    Discords about Java.
+                </p>
+                <div class="button">
+                    <a href="https://discord.gg/X3NmMgzFKF">JOIN NOW!</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <p>&copy 2022 JavaDiscord | JavaDiscord is not affiliated, associated, or endorsed with/by Discord or Oracle</p>
+        </div>
+    </footer>
+    <!-- Cookie-Banner -->
+    <div class="cookie-container">
+        <div class="cookie-content">
+            <h2 id="cookie-policy">Cookie policy</h2>
+            <p>
+                We are using cookies to analyse traffic on this website.
+                You accept the use of cookies by closing or dismissing this message, scrolling the page, clicking a link/button or by continuing to browse in any way.
+            </p>
+        </div>
+        <div class="cookie-links">
+            <a href="#" id="got-it-btn" class="cookie-btn">Got it!</a>
+        </div>
+    </div>
+    <!-- JS -->
+    <script type="text/javascript">
+        // Hamburger menu
+        const hamburger = document.getElementById("hamburger");
+        const navUL = document.getElementById("nav-ul");
+        const navbar = document.querySelector("nav");
+
+        hamburger.addEventListener("click", () => {
+            navUL.classList.toggle("show");
+            navbar.classList.toggle("bottom-shadow-effect");
+        });
+
+        // Scroll effect
+        window.addEventListener("scroll", function() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("navbar-scrolling", window.scrollY > 0);
+        });
+        
+        // Cookie
+        const cookieContainer = document.querySelector(".cookie-container");
+        const cookieButton = document.querySelector(".cookie-btn");
+
+        cookieButton.addEventListener("click", () => {
+            cookieContainer.classList.remove("active");
+            localStorage.setItem("cookieContainerDisplayed", "true");
+        });
+
+        setTimeout(() => {
+            if (!localStorage.getItem("cookieContainerDisplayed")) {
+                cookieContainer.classList.add("active")
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
