@@ -1,0 +1,11 @@
+RewriteEngine On
+
+<Files "LICENSE">
+  Require all denied
+</Files>
+
+<Files "README.md">
+  Require all denied
+</Files>
+
+### LOCAL CONFIG BELOW THIS LINE
