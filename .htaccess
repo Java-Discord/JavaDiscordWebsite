@@ -1,5 +1,7 @@
 RewriteEngine On
 
+Options +MultiViews
+
 <Files "LICENSE">
   Require all denied
 </Files>
