@@ -23,6 +23,10 @@
     .qotw-text h1 {
         font-size: 56px;
     }
+
+    .partner-container h1 {
+        font-size: 40px;
+    }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -66,6 +70,10 @@
     .qotw-image { 
         display: none;
     }
+
+    .partner-container h1 {
+        font-size: 36px;
+    }
 }
 
 @media only screen and (max-width: 1020px) {
@@ -93,6 +101,10 @@
     .qotw-text h1 {
         font-size: 42px;
     }
+
+    .partner-container h1 {
+        font-size: 32px;
+    }
 }
 
 @media only screen and (max-width: 940px) {
@@ -119,6 +131,10 @@
 
     .qotw-text h1 {
         font-size: 36px;
+    }
+
+    .partner-container h1 {
+        font-size: 26px;
     }
 }
 
@@ -155,6 +171,18 @@
 
     .qotw-text h1 {
         font-size: 30px;
+    }
+
+    .partner-imgs {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .partner-imgs a {
+        margin-left: auto;
+        margin-bottom: 3%;
+        margin-right: auto;
+        width: 30%;
     }
 }
 

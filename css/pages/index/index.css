@@ -1,3 +1,10 @@
+.paragraph {
+    color:white;
+    font-family: "Inter";
+    font-size: 34px;
+    font-weight: 600;
+}
+
 .introduction-container {
     display: flex;
     margin-top: 5%;
@@ -79,13 +86,6 @@
     color: #8e9ba3;
 }
 
-.paragraph {
-    color:white;
-    font-family: "Inter";
-    font-size: 34px;
-    font-weight: 600;
-}
-
 .qotw-container {
     display: flex;
     margin-top: 5%;
@@ -127,4 +127,41 @@
 .qotw-image {
     padding-left: 2%;
     width: 35%;
+}
+
+.partner-container {
+    margin-top: 8%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    color:black;
+    padding: 1% 0;
+}
+
+.partner-container h1 {
+    width: 100%;
+    text-align: center;
+    font-family: "Uni Sans";
+    font-size: 45px;
+}
+
+.partner-imgs {
+    margin-top: 2%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.partner-imgs a {
+    width: 14%;
+}
+
+.partner-imgs a img {
+    width: 100%;
+}
+
+.partner-imgs a:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
 }

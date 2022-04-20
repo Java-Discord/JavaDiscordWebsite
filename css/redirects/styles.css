@@ -1,0 +1,12 @@
+p { 
+    margin-top: 2%;   
+    color:white;
+    font-family: "Inter";
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+
+p a {
+    color: #ff212d;
+}

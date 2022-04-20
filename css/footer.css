@@ -1,0 +1,33 @@
+.footer-container {
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    color:black;
+    padding: 1% 20%;
+}
+
+.footer-container p {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    width: 50%;
+}
+
+/* --------------------- */
+/* FOOTER RESPONSIVENESS */
+/* --------------------- */
+
+
+@media only screen and (max-width: 1600px) {
+    .footer-container p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .footer-container p {
+        font-size: 9px;
+    }
+}
