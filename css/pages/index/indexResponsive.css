@@ -11,6 +11,14 @@
         padding: 14px 80px;
         font-size: 32px;
     }
+    
+    .data-field {
+        font-size: 42px;
+    }
+    
+    .data-field-subtitle {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -34,6 +42,14 @@
         padding: 12px 75px;
         font-size: 30px;
     }
+
+    .data-field {
+        font-size: 37px;
+    }
+    
+    .data-field-subtitle {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width: 1020px) {
@@ -48,6 +64,14 @@
     .introduction-join-btn {
         padding: 10px 70px;
         font-size: 28px;
+    }
+
+    .data-field {
+        font-size: 35px;
+    }
+    
+    .data-field-subtitle {
+        font-size: 15px;
     }
 }
 
@@ -64,9 +88,49 @@
         padding: 8px 65px;
         font-size: 26px;
     }
+    
+    .data-field {
+        font-size: 32px;
+    }
+    
+    .data-field-subtitle {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 750px) {
+    .paragraph {
+        font-size: 20px;
+    }
+
+    .introduction-text h1 {
+        font-size: 45px;
+    }
+
+    .introduction-join-btn {
+        padding: 6px 60px;
+        font-size: 24px;
+    }
+
+    .data-container {
+        margin-top: 15%;
+        flex-direction: column;
+    }
+
+    .data-field {
+        font-size: 28px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6px;
+    }
+    
+    .data-field-subtitle {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
     .paragraph {
         font-size: 18px;
     }
@@ -78,5 +142,13 @@
     .introduction-join-btn {
         padding: 6px 60px;
         font-size: 24px;
+    }
+
+    .data-field {
+        font-size: 26px;
+    }
+    
+    .data-field-subtitle {
+        font-size: 12px;
     }
 }

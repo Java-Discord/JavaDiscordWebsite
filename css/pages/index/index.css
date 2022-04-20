@@ -49,7 +49,39 @@
     width: 50%;
 }
 
+.data-container {
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #062233;
+    color:white;
+    padding: 3% 0;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+.data-field {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #132d3d;
+    border-radius: 10px;
+    padding: 2% 0%;
+    width: 18%;
+
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.data-field-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    color: #8e9ba3;
+}
+
 .paragraph {
+    color:white;
     font-family: "Inter";
     font-size: 34px;
     font-weight: 600;
