@@ -19,6 +19,10 @@
     .data-field-subtitle {
         font-size: 20px;
     }
+
+    .qotw-text h1 {
+        font-size: 56px;
+    }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -50,6 +54,18 @@
     .data-field-subtitle {
         font-size: 17px;
     }
+
+    .qotw-text {
+        width: 100%;
+    }
+
+    .qotw-paragraph {
+        padding-right: 3%;
+    }
+
+    .qotw-image { 
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1020px) {
@@ -73,6 +89,10 @@
     .data-field-subtitle {
         font-size: 15px;
     }
+
+    .qotw-text h1 {
+        font-size: 42px;
+    }
 }
 
 @media only screen and (max-width: 940px) {
@@ -95,6 +115,10 @@
     
     .data-field-subtitle {
         font-size: 12px;
+    }
+
+    .qotw-text h1 {
+        font-size: 36px;
     }
 }
 
@@ -128,6 +152,10 @@
     .data-field-subtitle {
         font-size: 14px;
     }
+
+    .qotw-text h1 {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -150,5 +178,9 @@
     
     .data-field-subtitle {
         font-size: 12px;
+    }
+
+    .qotw-text h1 {
+        font-size: 26px;
     }
 }

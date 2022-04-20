@@ -1,4 +1,3 @@
-
 .introduction-container {
     display: flex;
     margin-top: 5%;
@@ -85,4 +84,47 @@
     font-family: "Inter";
     font-size: 34px;
     font-weight: 600;
+}
+
+.qotw-container {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    color:white;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+.qotw-text {
+    margin-top: 5%;
+    width: 65%;
+    display:flex;
+    flex-direction: column;
+}
+
+.qotw-text h1 {
+    font-family: "Uni Sans";
+    font-size: 73px;
+}
+
+.qotw-paragraph {
+    margin-top: 2%;
+    padding-right: 30%;
+}
+
+.qotw-learn-more {
+    margin-top: 4%;
+    color: #ff212d;
+    font-family: "Uni Sans", "Inter";
+    text-decoration: underline solid transparent;
+    transition: text-decoration 0.4s ease;
+}
+
+.qotw-learn-more:hover {
+    text-decoration: underline solid currentColor;
+}
+
+.qotw-image {
+    padding-left: 2%;
+    width: 35%;
 }

@@ -17,3 +17,9 @@
 body {
     background-color: #011E2F;
 }
+
+.special-word {
+    background-color: #1E3847;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
