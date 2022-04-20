@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1600px) {
+    .paragraph {
+        font-size: 32px;
+    }
+
+    .introduction-text h1 {
+        font-size: 65px;
+    }
+
+    .introduction-join-btn {
+        padding: 14px 80px;
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .paragraph {
+        font-size: 28px;
+    }
+
+    .introduction-text{
+        width: 100%;
+    }
+
+    .introduction-text h1 {
+        font-size: 60px;
+    }
+
+    .introduction-image {
+        display: none;
+    }
+
+    .introduction-join-btn {
+        padding: 12px 75px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .paragraph {
+        font-size: 26px;
+    }
+
+    .introduction-text h1 {
+        font-size: 55px;
+    }
+
+    .introduction-join-btn {
+        padding: 10px 70px;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .paragraph {
+        font-size: 24px;
+    }
+
+    .introduction-text h1 {
+        font-size: 50px;
+    }
+
+    .introduction-join-btn {
+        padding: 8px 65px;
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .introduction-text h1 {
+        font-size: 36px;
+    }
+
+    .introduction-join-btn {
+        padding: 6px 60px;
+        font-size: 24px;
+    }
+}

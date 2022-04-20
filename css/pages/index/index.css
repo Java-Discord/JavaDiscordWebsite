@@ -1,0 +1,56 @@
+
+.introduction-container {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    color:white;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+.introduction-text {
+    margin-top: 6%;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+}
+
+.introduction-text h1 {
+    font-family: "Uni Sans";
+    font-size: 90px;
+}
+
+.introduction-paragraph {
+    margin-top: 2%;
+    padding-right: 6%;
+}
+
+.introduction-join-btn {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-top: 5%;
+    padding: 16px 85px;
+    color: white;
+    font-size: 34px;
+    font-family: "Uni Sans", sans-serif;
+    text-decoration: none;
+
+    background-color: #FF212D;
+    border-radius: 25px;
+}
+
+.introduction-join-btn:hover {
+    transition: background-color 0.5s ease;
+    background-color: #fa3e48;
+}
+
+.introduction-image {
+    width: 50%;
+}
+
+.paragraph {
+    font-family: "Inter";
+    font-size: 34px;
+    font-weight: 600;
+}
