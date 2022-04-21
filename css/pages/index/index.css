@@ -1,7 +1,7 @@
 .paragraph {
     color:white;
     font-family: "Inter";
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .introduction-text {
-    margin-top: 6%;
+    margin-top: 7%;
     width: 50%;
     display:flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
 
 .introduction-text h1 {
     font-family: "Uni Sans";
-    font-size: 90px;
+    font-size: 86px;
 }
 
 .introduction-paragraph {
@@ -36,7 +36,7 @@
     align-items: center;
     margin-right: auto;
     margin-top: 5%;
-    padding: 16px 85px;
+    padding: 14px 82px;
     color: white;
     font-size: 34px;
     font-family: "Uni Sans", sans-serif;
@@ -76,13 +76,13 @@
     width: 18%;
 
     text-align: center;
-    font-size: 45px;
+    font-size: 41px;
     font-weight: 700;
 }
 
 .data-field-subtitle {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     color: #8e9ba3;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .qotw-text {
-    margin-top: 5%;
+    margin-top: 8%;
     width: 65%;
     display:flex;
     flex-direction: column;
@@ -104,7 +104,7 @@
 
 .qotw-text h1 {
     font-family: "Uni Sans";
-    font-size: 73px;
+    font-size: 69px;
 }
 
 .qotw-paragraph {
@@ -113,7 +113,7 @@
 }
 
 .qotw-learn-more {
-    margin-top: 4%;
+    margin-top: 2%;
     color: #ff212d;
     font-family: "Uni Sans", "Inter";
     text-decoration: underline solid transparent;
@@ -143,7 +143,7 @@
     width: 100%;
     text-align: center;
     font-family: "Uni Sans";
-    font-size: 45px;
+    font-size: 41px;
 }
 
 .partner-imgs {
