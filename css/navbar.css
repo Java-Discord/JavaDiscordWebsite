@@ -7,7 +7,7 @@ nav {
 }
 
 nav img {
-    width: 125px;
+    width: 115px;
 }
 
 .nav-ul {
@@ -18,11 +18,11 @@ nav img {
 
 .nav-ul li a {
     color: white;
-    padding: 10px 30px;
+    padding: 10px 22px;
     text-decoration: underline solid transparent;
     transition: text-decoration 0.4s ease;
     font-family: "Inter", sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
 }
 
@@ -42,7 +42,7 @@ nav img {
 }
 
 .nav-right {
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     margin-left: auto;
 }
@@ -69,9 +69,9 @@ nav img {
     align-items: center;
     margin-right: 20px;
     margin-left: 40px;
-    padding: 12px 60px;
+    padding: 10px 55px;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     font-family: "Uni Sans", sans-serif;
     text-decoration: none;
 
@@ -107,26 +107,21 @@ nav img {
 
     .nav-ul li a {
         padding: 10px 26px;
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .nav-right {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .social-btn {
         margin-left: 32px;
     }
 
-    .social-btn:hover {
-        transition: font-size 0.2s ease;
-        font-size: 15px;
-    }
-
     .join-btn {
-        font-size: 28px;
+        font-size: 26px;
         padding: 10px 50px;
-        margin-left: 32px;
+        margin-left: 28px;
     }
 }
 
@@ -137,7 +132,7 @@ nav img {
 
     .nav-ul li a {
         padding: 10px 22px;
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .nav-right {
@@ -148,13 +143,8 @@ nav img {
         margin-left: 26px;
     }
 
-    .social-btn:hover {
-        transition: font-size 0.2s ease;
-        font-size: 13px;
-    }
-
     .join-btn {
-        font-size: 26px;
+        font-size: 24px;
         padding: 8px 40px;
         margin-left: 26px;
     }
@@ -167,25 +157,20 @@ nav img {
 
     .nav-ul li a {
         padding: 10px 18px;
-        font-size: 24px;
+        font-size: 20px;
 
     }
 
     .nav-right {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .social-btn {
         margin-left: 20px;
     }
 
-    .social-btn:hover {
-        transition: font-size 0.2s ease;
-        font-size: 11px;
-    }
-
     .join-btn {
-        font-size: 24px;
+        font-size: 22px;
         padding: 6px 30px;
         margin-left: 20px;
     }
@@ -198,24 +183,19 @@ nav img {
 
     .nav-ul li a {
         padding: 10px 14px;
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .nav-right {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .social-btn {
         margin-left: 14px;
     }
 
-    .social-btn:hover {
-        transition: font-size 0.2s ease;
-        font-size: 9px;
-    }
-
     .join-btn {
-        font-size: 22px;
+        font-size: 20px;
         padding: 4px 28px;
         margin-left: 14px;
     }
