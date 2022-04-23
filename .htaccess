@@ -1,6 +1,7 @@
 RewriteEngine On
 
 Options +MultiViews
+ErrorDocument 404 /error/404.html
 
 <Files "LICENSE">
   Require all denied
