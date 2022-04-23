@@ -6,13 +6,22 @@
     padding: 1% 20%;
 }
 
-.footer-container p {
+.footer-container div {
+    align-self: center;
     font-family: "Inter";
     font-size: 12px;
     font-weight: 600;
     line-height: 1.5;
 
-    width: 50%;
+    width: auto;
+}
+
+.left {
+    margin-left: 5%;
+}
+
+.right {
+    margin-left: auto;
 }
 
 /* --------------------- */
@@ -21,31 +30,51 @@
 
 
 @media only screen and (max-width: 1600px) {
-    .footer-container p {
-        font-size: 10px;
+    .footer-container div {
+        font-size: 11px;
     }
 }
 
 @media only screen and (max-width: 1250px) {
-    .footer-container p {
-        font-size: 9px;
+    .footer-container div {
+        font-size: 10px;
     }
 }
 
 @media only screen and (max-width: 1020px) {
-    .footer-container p {
-        font-size: 8px;
+    .footer-container div {
+        font-size: 10px;
     }
 }
 
 @media only screen and (max-width: 940px) {
-    .footer-container p {
-        font-size: 7px;
+    .footer-container {
+        padding: 1% 10%;
+    }
+
+    .footer-container div {
+        align-self: flex-start;
+        font-size: 10px;
+        width: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .left {
+        margin-left: 18%;
+        margin-bottom: 1%;
+    }
+    
+    .right {
+        margin-left: 18%;
     }
 }
 
 @media only screen and (max-width: 750px) {
-    .footer-container p {
-        font-size: 6px;
+
+    .footer-container div {
+        font-size: 9px;
     }
 }
