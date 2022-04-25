@@ -1,15 +1,34 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 3rem;
+}
+
 .footer-container {
-    color: #8e9ba3;  
+    color: #8e9ba3; 
 }
 
 .footer-container p {
     position: absolute;
-    bottom: 2%;
+    bottom: 1%;
+
     font-family: "Inter";
     font-size: 12px;
     font-weight: 600;
     line-height: 1.5;
     text-align: center;
+
     width: 100%;
 }
 
