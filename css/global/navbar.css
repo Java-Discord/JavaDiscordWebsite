@@ -220,6 +220,11 @@ nav img {
         margin-bottom: 7px;
     }
 
+    
+    .nav-ul li a {
+        font-size: 20px;
+    }
+
     .nav-ul.show {
         display: flex;
     }
