@@ -1,0 +1,80 @@
+.footer-container {
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    color:black;
+    padding: 1% 20%;
+}
+
+.footer-container div {
+    align-self: center;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    width: auto;
+}
+
+.left {
+    margin-left: 5%;
+}
+
+.right {
+    margin-left: auto;
+}
+
+/* --------------------- */
+/* FOOTER RESPONSIVENESS */
+/* --------------------- */
+
+
+@media only screen and (max-width: 1600px) {
+    .footer-container div {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .footer-container div {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .footer-container div {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .footer-container {
+        padding: 1% 10%;
+    }
+
+    .footer-container div {
+        align-self: flex-start;
+        font-size: 10px;
+        width: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .left {
+        margin-left: 18%;
+        margin-bottom: 1%;
+    }
+    
+    .right {
+        margin-left: 18%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .footer-container div {
+        font-size: 9px;
+    }
+}

@@ -1,6 +1,10 @@
+## THIS IS A SAMPLE .HTACCESS FILE
+
 RewriteEngine On
 
 Options +MultiViews
+ErrorDocument 404 /error/404.html
+ErrorDocument 403 /error/403.html
 
 <Files "LICENSE">
   Require all denied

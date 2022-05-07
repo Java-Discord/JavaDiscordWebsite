@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 3rem;
+}
+
+.footer-container {
+    color: #8e9ba3; 
+}
+
+.footer-container p {
+    position: absolute;
+    bottom: 1%;
+
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+
+    width: 100%;
+}
+
+/* --------------------- */
+/* FOOTER RESPONSIVENESS */
+/* --------------------- */
+
+
+@media only screen and (max-width: 1600px) {
+    .footer-container p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .footer-container p {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .footer-container p {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .footer-container p {
+        font-size: 7px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .footer-container p {
+        font-size: 6px;
+    }
+}

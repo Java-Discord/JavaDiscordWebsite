@@ -1,0 +1,109 @@
+.rules-title {
+    font-family: "Inter";
+    font-size: 35px;
+    font-weight: 1000;
+
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.rules-container {
+    margin: 1% 20%;
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Inter";
+    font-size: 22px;
+    font-weight: 700;
+    color:white;
+}
+
+.rule {
+    margin-top: 2%;
+    width: 100%;
+    padding: 1.5% 1.75%;
+
+    background-color: #0e293a;
+    border-radius: 15px;
+}
+
+.rule-number {
+    width: fit-content;
+    margin-right: .5%;
+
+    color: #ff212d;
+    filter: drop-shadow(0 0 0.6rem #ff212d);
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .rules-title {
+        font-size: 33px;
+    }
+    
+    .rules-container {
+        margin: 1% 18%;
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .rules-title {
+        font-size: 30px;
+    }
+    
+    .rules-container {
+        margin: 1% 16%;
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .rules-title {
+        font-size: 27px;
+    }
+    
+    .rules-container {
+        margin: 1% 14%;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .rules-title {
+        font-size: 26px;
+    }
+    
+    .rules-container {
+        margin: 1% 12%;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .rules-title {
+        font-size: 23px;
+    }
+    
+    .rules-container {
+        margin: 1% 8%;
+        font-size: 18px;
+    }
+
+    .rule {
+        padding: 2%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .rules-title {
+        font-size: 20px;
+    }
+    
+    .rules-container {
+        margin: 1% 8%;
+        font-size: 14px;
+    }
+}
