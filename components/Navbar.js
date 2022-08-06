@@ -43,7 +43,7 @@ export const Navbar = () => {
             <div className={navbarStyles.navRight}>
                 <a href="/r/github" target="_blank" className={navbarStyles.socialBtn}><FontAwesomeIcon icon={faGithub} size="3x" /></a>
                 <a href="/r/twitter" target="_blank" className={navbarStyles.socialBtn}><FontAwesomeIcon icon={faTwitter} size="3x" /></a>
-                <a href="/r/join" target="_blank" className={navbarStyles.joinBtn}>Join</a>
+                <a href="https://discord.com/invite/X3NmMgzFKF" target="_blank" className={navbarStyles.joinBtn}>Join</a>
             </div>
         </div>
     )

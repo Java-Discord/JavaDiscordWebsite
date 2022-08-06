@@ -5,7 +5,16 @@ import Link from "next/link";
 import {Navbar} from "../components/Navbar";
 import indexStyles from '/styles/index.module.css'
 
-export default function HomePage() {
+export default function HomePage({ memberCount, onlineCount, weeklyMessages, activeMembers }) {
+    const twoDigitFormat = new Intl.NumberFormat('en-US', {maximumSignificantDigits: 2});
+    const threeDigitFormat = new Intl.NumberFormat("en-IN", {maximumSignificantDigits: 3});
+
+    const formattedMembers = threeDigitFormat.format(memberCount);
+    const formattedOnlineCount = twoDigitFormat.format(onlineCount);
+    const formattedWeeklyMessages = threeDigitFormat.format(weeklyMessages);
+    const formattedMonthlyMessages = twoDigitFormat.format(weeklyMessages * 4);
+    const formattedActiveMembers = twoDigitFormat.format(activeMembers);
+
     return (
         <div>
             <Head>
@@ -16,8 +25,8 @@ export default function HomePage() {
             <div className={indexStyles.introductionContainer}>
                 <div className={indexStyles.introductionText}>
                     <h1>HELP. <b style={{color: "#ff212d"}}>CODE.</b> LEARN.</h1>
-                    <p className={[indexStyles.paragraph, indexStyles.introductionParagraph].join(" ")}>With over 14,500 Members and 50,000 Messages sent each month, join one of the biggest Java Communities on Discord to help, get help and discuss programming in Java.</p>
-                    <a href="/r/join" target="_blank" className={indexStyles.introductionJoinBtn}>Join</a>
+                    <p className={[indexStyles.paragraph, indexStyles.introductionParagraph].join(" ")}>With over {formattedMembers} Members and {formattedMonthlyMessages} Messages sent each month, join one of the biggest Java Communities on Discord to help, get help and discuss programming in Java.</p>
+                    <a href="https://discord.com/invite/X3NmMgzFKF" target="_blank" className={indexStyles.introductionJoinBtn}>Join</a>
                 </div>
                 <div className={indexStyles.introductionImage}>
                     <Image src={"/images/Channels.png"} alt={"Image showing a selection of Discord-Channels available on the Java-Discord."} width="85%" height="60%" layout="responsive" objectFit="contain"/>
@@ -26,15 +35,15 @@ export default function HomePage() {
             {/* DATA/STATS */}
             <div className={indexStyles.dataContainer}>
                 <div className={indexStyles.dataField}>
-                    <p>1,200+</p>
+                    <p>{formattedActiveMembers}+</p>
                     <p className={indexStyles.dataFieldSubtitle}>active users¹</p>
                 </div>
                 <div className={indexStyles.dataField}>
-                    <p>14,500+</p>
+                    <p>{formattedMembers}+</p>
                     <p className={indexStyles.dataFieldSubtitle}>members</p>
                 </div>
                 <div className={indexStyles.dataField}>
-                    <p>12,500+</p>
+                    <p>{formattedWeeklyMessages}+</p>
                     <p className={indexStyles.dataFieldSubtitle}>messages each week²</p>
                 </div>
             </div>
@@ -65,4 +74,20 @@ export default function HomePage() {
             </div>
         </div>
     )
+}
+
+export async function getStaticProps() {
+    const res = await fetch('https://api.javadiscord.net/guilds/648956210850299986/metrics')
+    const metrics = await res.json()
+
+    return {
+        props: {
+            // Anything passed here is available in the page via props.testProp
+            memberCount: metrics.memberCount,
+            onlineCount: metrics.onlineCount,
+            weeklyMessages: metrics.weeklyMessages,
+            activeMembers: metrics.activeMembers,
+        },
+        revalidate: 60 * 15 // Cache site for 15 Minutes to reduce load times
+    }
 }
