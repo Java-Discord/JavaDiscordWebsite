@@ -18,8 +18,76 @@ body {
     background-color: #011E2F;
 }
 
+html {
+    height: 100%;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
 .specialWord {
     background-color: #1E3847;
     padding: 2px 8px;
     border-radius: 20px;
+}
+
+/* FOOTER */
+
+.footerContainer {
+    position: relative;
+    color: #8e9ba3;
+    margin-bottom: 3%;
+}
+
+.footerContainer p {
+    position: absolute;
+
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+
+    width: 100%;
+}
+
+/* --------------------- */
+/* FOOTER RESPONSIVENESS */
+/* --------------------- */
+
+
+@media only screen and (max-width: 1600px) {
+    .footerContainer p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .footerContainer p {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .footerContainer p {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .footerContainer p {
+        font-size: 7px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .footerContainer p {
+        font-size: 6px;
+    }
 }
