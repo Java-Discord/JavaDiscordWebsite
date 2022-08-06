@@ -14,15 +14,9 @@
     padding: 0;
 }
 
-body {
-    background-color: #011E2F;
-    padding-bottom: 1vh;
-}
-
 html {
     height: 100%;
     box-sizing: border-box;
-    min-height: 100%;
 }
 
 *,
@@ -31,6 +25,13 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    background-color: #011E2F;
+
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 3rem;
+}
 
 .specialWord {
     background-color: #1E3847;
@@ -41,13 +42,12 @@ html {
 /* FOOTER */
 
 .footerContainer {
-    position: relative;
     color: #8e9ba3;
-    margin-bottom: 3%;
 }
 
 .footerContainer p {
     position: absolute;
+    bottom: 1%;
 
     font-family: "Inter", sans-serif;
     font-size: 12px;

@@ -1,0 +1,77 @@
+.errorTitle {
+    margin-top: 2%;
+    color:white;
+    font-family: "Inter", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.errorText {
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #8e9ba3;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.errorText a {
+    color: #ff212d;
+}
+
+/* ------------------ */
+/* 404 RESPONSIVENESS */
+/* ------------------ */
+
+@media only screen and (max-width: 1600px) {
+    .errorTitle {
+        font-size: 38px;
+    }
+
+    .errorText  {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .errorTitle {
+        font-size: 32px;
+    }
+
+    .errorText  {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .errorTitle {
+        font-size: 26px;
+    }
+
+    .errorText  {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .errorTitle {
+        font-size: 20px;
+    }
+
+    .errorText  {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .errorTitle {
+        font-size: 16px;
+    }
+
+    .errorText  {
+        font-size: 12px;
+    }
+}
