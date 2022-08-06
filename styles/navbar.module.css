@@ -1,22 +1,11 @@
-nav {
+.navUl {
     display: flex;
-    margin: 0 15px;
-    align-items: left;
-    padding: 5px;
-    flex-wrap: wrap;
-}
-
-nav img {
-    width: 95px;
-}
-
-.nav-ul {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     list-style-type: none;
+    margin: 0;
 }
 
-.nav-ul li a {
+.navUl li a {
     color: white;
     padding: 10px 20px;
     text-decoration: underline solid transparent;
@@ -26,8 +15,12 @@ nav img {
     font-weight: 600;
 }
 
-.nav-ul li a:hover {
-    text-decoration: underline solid currentColor;   
+.navUl li a:hover {
+    text-decoration: underline solid currentColor;
+}
+
+.activeLink {
+    color: #ff212d !important;
 }
 
 .navbar {
@@ -35,13 +28,18 @@ nav img {
     right: 0;
     left: 0;
     background: #011E2F;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 15px;
+    padding: 5px;
 }
 
-.active-link {
-    color: #ff212d !important;
+.navbar img {
+    width: 95px;
 }
 
-.nav-right {
+.navRight {
     font-size: 11px;
     display: flex;
     margin-left: auto;
@@ -63,7 +61,7 @@ nav img {
     outline: none;
 }
 
-.join-btn {
+.joinBtn {
     align-self: center;
     display: flex;
     align-items: center;
@@ -72,25 +70,25 @@ nav img {
     padding: 8px 45px;
     color: white;
     font-size: 28px;
-    font-family: "Uni Sans", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
     text-decoration: none;
-
     background-color: #FF212D;
     border-radius: 28px;
 }
 
-.join-btn:hover {
+.joinBtn:hover {
     transition: background-color 0.5s ease;
     background-color: #fa3e48;
 }
 
-.social-btn {
+.socialBtn {
     align-self: center;
     margin-left: 30px;
-    color:white;
+    color: white;
 }
 
-.social-btn:hover {
+.socialBtn:hover {
     transition: transform 0.2s ease;
     transform: scale(1.1);
 }
@@ -101,24 +99,24 @@ nav img {
 
 
 @media only screen and (max-width: 1600px) {
-    nav img {
+    .navbar img {
         width: 85px;
     }
 
-    .nav-ul li a {
+    .navUl li a {
         padding: 10px 20px;
         font-size: 20px;
     }
 
-    .nav-right {
+    .navRight {
         font-size: 10px;
     }
 
-    .social-btn {
+    .socialBtn {
         margin-left: 29px;
     }
 
-    .join-btn {
+    .joinBtn {
         font-size: 26px;
         padding: 8px 45px;
         margin-left: 22px;
@@ -126,24 +124,24 @@ nav img {
 }
 
 @media only screen and (max-width: 1250px) {
-    nav img {
+    .navbar img {
         width: 75px;
     }
 
-    .nav-ul li a {
+    .navUl li a {
         padding: 10px 18px;
         font-size: 18px;
     }
 
-    .nav-right {
+    .navRight {
         font-size: 10px;
     }
 
-    .social-btn {
+    .socialBtn {
         margin-left: 26px;
     }
 
-    .join-btn {
+    .joinBtn {
         font-size: 24px;
         padding: 8px 40px;
         margin-left: 20px;
@@ -151,25 +149,25 @@ nav img {
 }
 
 @media only screen and (max-width: 1020px) {
-    nav img {
+    .navbar img {
         width: 70px;
     }
 
-    .nav-ul li a {
+    .navUl li a {
         padding: 10px 18px;
         font-size: 16px;
 
     }
 
-    .nav-right {
+    .navRight {
         font-size: 9px;
     }
 
-    .social-btn {
+    .socialBtn {
         margin-left: 22px;
     }
 
-    .join-btn {
+    .joinBtn {
         font-size: 22px;
         padding: 6px 30px;
         margin-left: 18px;
@@ -177,63 +175,64 @@ nav img {
 }
 
 @media only screen and (max-width: 940px) {
-    nav img {
+    .navbar img {
         width: 60px;
     }
 
-    .nav-ul li a {
+    .navUl li a {
         padding: 10px 14px;
         font-size: 14px;
     }
 
-    .nav-right {
+    .navRight {
         font-size: 9px;
     }
 
-    .social-btn {
+    .socialBtn {
         margin-left: 16px;
     }
 
-    .join-btn {
+    .joinBtn {
         font-size: 20px;
         padding: 4px 28px;
         margin-left: 14px;
     }
 }
-
 @media only screen and (max-width: 750px) {
-    nav {
-        transition: all .5s ease;
-    }
-
-    nav img {
-        width: 60px;
-    }
-
-    .nav-ul {
+    .navUl {
         display: none;
         flex-direction: column;
         width: 100%;
     }
 
-    .nav-ul li {
+    .navUl.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar {
+        transition: all .5s ease;
+    }
+
+    .navbar img {
+        width: 60px;
+    }
+
+    .navUl li {
         margin-bottom: 7px;
     }
 
-    
-    .nav-ul li a {
+    .navUl li a {
         font-size: 20px;
-    }
-
-    .nav-ul.show {
-        display: flex;
     }
 
     .hamburger {
         display: block;
     }
 
-    .nav-right {
+    .navRight {
         display:none
     }
 }
+
