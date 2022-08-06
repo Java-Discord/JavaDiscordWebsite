@@ -6,7 +6,7 @@ import ruleStyles from "/styles/rules.module.css";
 
 export default function HomePage() {
     return (
-        <div>
+        <div className="mainBody">
             <Head>
                 <title>Java Discord - Rules</title>
             </Head>
