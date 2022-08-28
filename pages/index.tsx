@@ -1,19 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import {GetStaticProps} from 'next';
 
 import {Navbar} from "../components/Navbar";
 import indexStyles from '/styles/index.module.css'
 
-export default function HomePage({ memberCount, onlineCount, weeklyMessages, activeMembers }) {
-    const twoDigitFormat = new Intl.NumberFormat('en-US', {maximumSignificantDigits: 2});
-    const threeDigitFormat = new Intl.NumberFormat("en-IN", {maximumSignificantDigits: 3});
+type Props = {
+    memberCount: number;
+    weeklyMessages: number;
+    monthlyMessages: number;
+    activeMembers: number;
+}
 
-    const formattedMembers = threeDigitFormat.format(memberCount);
-    const formattedOnlineCount = twoDigitFormat.format(onlineCount);
-    const formattedWeeklyMessages = threeDigitFormat.format(weeklyMessages);
-    const formattedMonthlyMessages = twoDigitFormat.format(weeklyMessages * 4);
-    const formattedActiveMembers = twoDigitFormat.format(activeMembers);
+const HomePage: React.FC<Props> = (props) => {
 
     return (
         <div>
@@ -25,7 +25,7 @@ export default function HomePage({ memberCount, onlineCount, weeklyMessages, act
             <div className={indexStyles.introductionContainer}>
                 <div className={indexStyles.introductionText}>
                     <h1>HELP. <b style={{color: "#ff212d"}}>CODE.</b> LEARN.</h1>
-                    <p className={[indexStyles.paragraph, indexStyles.introductionParagraph].join(" ")}>With over {formattedMembers} Members and {formattedMonthlyMessages} Messages sent each month, join one of the biggest Java Communities on Discord to help, get help and discuss programming in Java.</p>
+                    <p className={[indexStyles.paragraph, indexStyles.introductionParagraph].join(" ")}>With over {props.memberCount} Members and {props.monthlyMessages} Messages sent each month, join one of the biggest Java Communities on Discord to help, get help and discuss programming in Java.</p>
                     <a href="https://discord.com/invite/X3NmMgzFKF" target="_blank" className={indexStyles.introductionJoinBtn}>Join</a>
                 </div>
                 <div className={indexStyles.introductionImage}>
@@ -35,15 +35,15 @@ export default function HomePage({ memberCount, onlineCount, weeklyMessages, act
             {/* DATA/STATS */}
             <div className={indexStyles.dataContainer}>
                 <div className={indexStyles.dataField}>
-                    <p>{formattedActiveMembers}+</p>
+                    <p>{props.activeMembers}+</p>
                     <p className={indexStyles.dataFieldSubtitle}>active users¹</p>
                 </div>
                 <div className={indexStyles.dataField}>
-                    <p>{formattedMembers}+</p>
+                    <p>{props.memberCount}+</p>
                     <p className={indexStyles.dataFieldSubtitle}>members</p>
                 </div>
                 <div className={indexStyles.dataField}>
-                    <p>{formattedWeeklyMessages}+</p>
+                    <p>{props.weeklyMessages}+</p>
                     <p className={indexStyles.dataFieldSubtitle}>messages each week²</p>
                 </div>
             </div>
@@ -70,24 +70,35 @@ export default function HomePage({ memberCount, onlineCount, weeklyMessages, act
             {/* FOOTER */}
             <div className={indexStyles.footerContainer}>
                 <div className={indexStyles.footerLeft}>©️ 2022 JavaDiscord <br/> JavaDiscord is not affiliated, associated, or endorsed with/by Discord or Oracle.</div>
-                <div className={indexStyles.footerRight}>¹ Users that sent a message in the last month, data gathered from Discord's Insight page. <br/> ² Data gathered from Discord's Insight page.</div>
+                <div className={indexStyles.footerRight}>¹ Users that sent a message in the last month, data gathered from Discord&apos;s Insight page. <br/> ² Data gathered from Discord&apos;s Insight page.</div>
             </div>
         </div>
     )
 }
 
-export async function getStaticProps() {
+// @ts-ignore
+export const getStaticProps: GetStaticProps<Props> = async () => {
     const res = await fetch('https://api.javadiscord.net/guilds/648956210850299986/metrics')
     const metrics = await res.json()
+
+    const twoDigitFormat = new Intl.NumberFormat('en-US', {maximumSignificantDigits: 2});
+    const threeDigitFormat = new Intl.NumberFormat("en-IN", {maximumSignificantDigits: 3});
+
+    const formattedMembers = threeDigitFormat.format(metrics.memberCount);
+    const formattedWeeklyMessages = threeDigitFormat.format(metrics.weeklyMessages);
+    const formattedMonthlyMessages = twoDigitFormat.format(metrics.weeklyMessages * 4);
+    const formattedActiveMembers = twoDigitFormat.format(metrics.activeMembers);
 
     return {
         props: {
             // Anything passed here is available in the page via props.testProp
-            memberCount: metrics.memberCount,
-            onlineCount: metrics.onlineCount,
-            weeklyMessages: metrics.weeklyMessages,
-            activeMembers: metrics.activeMembers,
+            memberCount: formattedMembers,
+            weeklyMessages: formattedWeeklyMessages,
+            monthlyMessages: formattedMonthlyMessages,
+            activeMembers: formattedActiveMembers,
         },
         revalidate: 60 * 15 // Cache site for 15 Minutes to reduce load times
     }
 }
+
+export default HomePage;

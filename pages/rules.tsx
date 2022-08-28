@@ -31,11 +31,11 @@ export default function HomePage() {
                             <p id="4"><b className={ruleStyles.ruleNumber}>#4</b> Usernames are to be kept in an easily mentionable
                                 way. For instance, <b className="specialWord">߶௵᧫៷</b> is not easily mentionable and should
                                 therefore be changed. <br/> <a style={{color: "#ff212d"}} href="https://support.discord.com/hc/en-us/articles/219070107-Server-Nicknames#h_01EJTEHFA19Q5BK1GQY2XJ2ZJS"
-                                                              target="_blank">➔ Read More</a></p>
+                                                              target="_blank" rel="noopener">➔ Read More</a></p>
                         </div>
                         <div className={ruleStyles.rule}>
                             <p id="5"><b className={ruleStyles.ruleNumber}>#5</b> Do not ask for help with projects that break rules
-                                and/or <a style={{color: "#ff212d"}} href="https://discord.com/terms" target="_blank">Discord’s TOS</a>.
+                                and/or <a style={{color: "#ff212d"}} href="https://discord.com/terms" target="_blank" rel="noopener">Discord’s TOS</a>.
                                 This also includes projects that break laws. Do not request help with ongoing exams. Do not
                                 provide or request direct solutions to graded assignments, general guidance is fine. </p>
                         </div>
@@ -52,16 +52,16 @@ export default function HomePage() {
                                 the <b className="specialWord">@DMs Welcome!</b> role. </p>
                         </div>
                         <div className={ruleStyles.rule}>
-                            <p id="9"><b className={ruleStyles.ruleNumber}>#9</b> Don't ping specific users for help. </p>
+                            <p id="9"><b className={ruleStyles.ruleNumber}>#9</b> Don&apos;t ping specific users for help. </p>
                         </div>
                         <div className={ruleStyles.rule}>
                             <p id="10"><b className={ruleStyles.ruleNumber}>#10</b> Do not expect us to do your homework. </p>
                         </div>
                         <div className={ruleStyles.rule}>
-                            <p id="11"><b className={ruleStyles.ruleNumber}>#11</b> Political or religious debates shouldn't take place on this server. </p>
+                            <p id="11"><b className={ruleStyles.ruleNumber}>#11</b> Political or religious debates shouldn&apos;t take place on this server. </p>
                         </div>
                         <div className={ruleStyles.rule}>
-                            <p id="12"><b className={ruleStyles.ruleNumber}>#12</b> Follow Discord’s <a style={{color: "#ff212d"}} href="https://discord.com/guidelines" target="_blank">Community Guidelines</a> and <a style={{color: "#ff212d"}} href="https://discord.com/terms" target="_blank">Terms of Service</a>. </p>
+                            <p id="12"><b className={ruleStyles.ruleNumber}>#12</b> Follow Discord&apos;s <a style={{color: "#ff212d"}} href="https://discord.com/guidelines" target="_blank" rel="noopener">Community Guidelines</a> and <a style={{color: "#ff212d"}} href="https://discord.com/terms" target="_blank" rel="noopener">Terms of Service</a>. </p>
                         </div>
                     </div>
                 <Footer/>
