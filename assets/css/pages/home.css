@@ -1,4 +1,4 @@
-@import url("css/global.css");
+@import url("/assets/css/global.css");
 
 .paragraph {
     color:white;
@@ -34,6 +34,11 @@
 }
 
 .introductionParagraph {
+    color:white;
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+
     margin-top: 2%;
     padding-right: 6%;
 }
