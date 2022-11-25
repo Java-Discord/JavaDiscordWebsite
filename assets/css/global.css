@@ -1,12 +1,7 @@
 @import url("https://rsms.me/inter/inter.css");
 @font-face {
     font-family: "Uni Sans Heavy";
-    src: url("//db.onlinewebfonts.com/t/4f6fb2fa3c231278167b36e966718cbb.eot");
-    src: url("//db.onlinewebfonts.com/t/4f6fb2fa3c231278167b36e966718cbb.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/4f6fb2fa3c231278167b36e966718cbb.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/4f6fb2fa3c231278167b36e966718cbb.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/4f6fb2fa3c231278167b36e966718cbb.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/4f6fb2fa3c231278167b36e966718cbb.svg#Uni Sans Heavy") format("svg");
+    src: url("/assets/fonts/uni-sans-heavy-woff2") format("woff2")
 }
 
 * {
