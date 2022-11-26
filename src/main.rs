@@ -11,7 +11,7 @@ use crate::redirects::github::GitHub;
 use crate::redirects::twitter::Twitter;
 use crate::redirects::join::Join;
 
-#[derive(Clone, Routable, PartialEq, Debug)]
+#[derive(Clone, Routable, PartialEq, Eq)]
 pub enum Route {
     #[at("/")]
     Home,
@@ -21,17 +21,17 @@ pub enum Route {
     GitHub,
     #[at("/r/twitter")]
     Twitter,
-    #[at("r/join")]
+    #[at("/r/join")]
     Join,
 }
 
-fn switch(routes: &Route) -> Html {
-    return match routes {
+fn switch(route: Route) -> Html {
+    return match route {
         Route::Home => html! { <Home /> },
         //Redirects
         Route::GitHub => html! { <GitHub /> },
         Route::Twitter => html! { <Twitter />},
-        Route::Join => html! { <Join /> }
+        Route::Join => html! { <Join /> },
         //Route::NotFound => html! { <NotFound /> },
     };
 }
@@ -42,12 +42,12 @@ fn app() -> Html {
     <BounceRoot>
         <HelmetBridge default_title="Java Discord - Java Community on Discord" />
     <BrowserRouter>
-        <Switch<Route> render={Switch::render(switch)} />
+            <Switch<Route> render={switch} />
     </BrowserRouter>
     </BounceRoot>
     }
 }
 
 fn main() {
-    yew::start_app::<App>();
+    yew::Renderer::<App>::new().render();
 }
