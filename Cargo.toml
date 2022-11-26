@@ -1,0 +1,20 @@
+[package]
+name = "JavaDiscordWebsite"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[profile.release]
+# less code to include into binary
+panic = 'abort'
+# optimization over all codebase ( better optimization, slower build )
+codegen-units = 1
+opt-level = 'z'
+# link time optimization using using whole-program analysis
+lto = true
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = { version = "0.20.0", features = ["csr"] }
+yew-router = "0.17.0"
+bounce = { version = "0.4.0", features = ["helmet"] }

@@ -1,0 +1,37 @@
+@import url("https://rsms.me/inter/inter.css");
+@font-face {
+    font-family: "Uni Sans Heavy";
+    src: url("/assets/fonts/uni-sans-heavy.woff2") format("woff2")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #011E2F;
+}
+
+.mainBody {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 3rem;
+}
+
+.specialWord {
+    background-color: #1E3847;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
