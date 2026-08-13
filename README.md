@@ -1,3 +1,3 @@
-# JavaDiscord
+# Discord Java Community
 
-Code of the official [Java Discord](https://discordjug.net) Website.
+Code of the official [Discord Java Community](https://discordjug.net) Website.
